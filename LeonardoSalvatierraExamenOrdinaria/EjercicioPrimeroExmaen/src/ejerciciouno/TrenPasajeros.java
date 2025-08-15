@@ -4,7 +4,6 @@ public class TrenPasajeros extends Tren implements Capacidad {
     private int numVagones;
     private int pasajerosPorVagon;
 
-    //Variables de TrenPasajeros
     public TrenPasajeros(String id, String nombre, double velocidadMax, int numVagones, int pasajerosPorVagon)
             throws TrenInvalidoException {
         super(id, nombre, velocidadMax);
@@ -16,13 +15,11 @@ public class TrenPasajeros extends Tren implements Capacidad {
     }
     
 
-	//sobreescribo calcularCapacidad
     @Override
     public double calcularCapacidad() {
         return numVagones * pasajerosPorVagon;
     }
     
-//Sobreescribo mostrarInformacion
     @Override
     public void mostrarInformacion() {
        
@@ -33,4 +30,5 @@ public class TrenPasajeros extends Tren implements Capacidad {
                 ", Velocidad Max: " + velocidadMax + " km/h, Capacidad: " + calcularCapacidad() + "pasajeros");
     }
 }
+
 
