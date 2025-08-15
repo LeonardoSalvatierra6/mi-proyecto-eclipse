@@ -3,14 +3,10 @@ package ejerciciouno;
 import java.util.ArrayList;
 
 
-
-//Arrays
 public class SistemaTrenes {
     public static void main(String[] args) {
         ArrayList<Tren> listaTrenes = new ArrayList();
         
-//Con esto podemos meter los valor de los trener 
-//Siempre siguiendo este orden(String id, String nombre, double velocidadMax, int numVagones, int pasajerosPorVagon)
         try {
             Tren tren1 = new TrenPasajeros("1234", "AVE", 180, 10, 60);
             Tren tren2 = new TrenCarga("1010", "MARKS", 150, 20);
@@ -26,9 +22,10 @@ public class SistemaTrenes {
             }
 
         }
-        //catchpara que coja la exception y salte cualquier error al crearlo mal
+
         catch (TrenInvalidoException e) {
             System.out.println("Error al crear tren: " + e.getMessage());
    }
     }
 }
+
