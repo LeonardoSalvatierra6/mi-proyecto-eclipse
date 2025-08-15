@@ -11,7 +11,6 @@ public class Movil {
 		System.out.println("Introduce tu numero movil");
 		String movil = scanner.nextLine();
 
-//Manejo de excepciones
 		
 		try {
 			ValidarMovil(movil);
@@ -24,7 +23,6 @@ public class Movil {
 		scanner.close();
 	}
 
-//Método de validación
 	
 	public static void ValidarMovil(String movil)
 	throws MovilInvalidException{
@@ -35,5 +33,6 @@ public class Movil {
 		}
 	}
 }
+
 
 
